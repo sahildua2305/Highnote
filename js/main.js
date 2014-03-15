@@ -51,7 +51,7 @@ jQuery(document).ready(function(){
 		var selectedText = getSelectionText();
 		var processURL = "./htmltodb.php";
 		console.log(selectedText);
-		if(selectedText != ""){
+		if(selectedText != "" && selectedText != " "){
 			$.ajax({
 				type: "POST",
 				url: processURL,
